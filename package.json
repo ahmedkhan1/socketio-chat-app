@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-chat-app",
+  "version": "1.0.0",
+  "description": "A simple nodejs chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedkhan1/socketio-chat-app.git"
+  },
+  "keywords": [
+    "nodejs",
+    "socketio",
+    "chatapp"
+  ],
+  "author": "Ahmed khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedkhan1/socketio-chat-app/issues"
+  },
+  "homepage": "https://github.com/ahmedkhan1/socketio-chat-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
