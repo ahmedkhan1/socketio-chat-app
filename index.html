@@ -31,6 +31,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src=”/socket.io/socket.io.js”></script>
     <script>
+        var socket = io();
+
+        socket.on(‘message’, addMessages);
+
         $(() => {
             $("#send").click(()=>{
                 sendMessage({
