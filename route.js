@@ -1,3 +1,4 @@
+const io = require("./socket.js")
 const app = express();
 
 app.get('/messages', (req, res) => {
