@@ -2,14 +2,14 @@ const io = require("../../socket.js");
 const express = require('express');
 const router = express.Router();
 
-router.get('/messages', (req, res) => {
+router.get('/', (req, res) => {
   Message.find({},(err, messages)=> {
     res.send(messages);
   })
 });
 
 
-router.post('/messages', (req, res) => {
+router.post('/', (req, res) => {
   var message = new Message(req.body);
   message.save((err) =>{
     if(err)
