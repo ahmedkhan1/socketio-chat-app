@@ -1,15 +1,15 @@
 const io = require("../socket.js");
 const express = require('express');
-const app = express();
+const router = express.Router();
 
-app.get('/messages', (req, res) => {
+router.get('/messages', (req, res) => {
   Message.find({},(err, messages)=> {
     res.send(messages);
   })
 });
 
 
-app.post('/messages', (req, res) => {
+router.post('/messages', (req, res) => {
   var message = new Message(req.body);
   message.save((err) =>{
     if(err)
@@ -19,3 +19,5 @@ app.post('/messages', (req, res) => {
     res.sendStatus(200);
   })
 })
+
+module.exports = router;
