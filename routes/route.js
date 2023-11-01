@@ -1,4 +1,5 @@
-const io = require("../socket.js")
+const io = require("../socket.js");
+const express = require('express');
 const app = express();
 
 app.get('/messages', (req, res) => {
