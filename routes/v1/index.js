@@ -3,7 +3,7 @@ const messageRoute = require("./messages.routes");
 
 const defaultRoutes = [
     {
-        path: "",
+        path: "messages",
         route: messageRoute,
         public: true,
     }
