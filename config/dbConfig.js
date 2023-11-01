@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const dbUrl = "mongodb://username:pass@ds257981.mlab.com:57981/simple-chat";
+const dbUrl = process.env.MONGO_URL;
 mongoose.connect(dbUrl , (err) => { 
     console.log("mongodb connected",err);
 })
