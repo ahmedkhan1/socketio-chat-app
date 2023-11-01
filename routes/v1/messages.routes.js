@@ -1,4 +1,4 @@
-const io = require("../socket.js");
+const io = require("../../socket.js");
 const express = require('express');
 const router = express.Router();
 
