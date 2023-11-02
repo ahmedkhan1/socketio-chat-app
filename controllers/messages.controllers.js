@@ -1,10 +1,10 @@
 
 
-const getMessages = () => {
+const getMessages = (req, res) => {
 
 }
 
-const sendMessage = () => {
+const sendMessage = (req, res) => {
 
 }
 
