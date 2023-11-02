@@ -1,6 +1,7 @@
 const io = require("../../controllers/socket.js");
 const express = require('express');
 const router = express.Router();
+const Message = require("Messages");
 
 router.get('/', (req, res) => {
   Message.find({},(err, messages)=> {
