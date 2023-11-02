@@ -1,3 +1,4 @@
+const Message = require("Messages");
 
 
 const getMessages = (req, res) => {
