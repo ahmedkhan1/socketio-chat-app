@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+require("dotenv").config("../.env");
 
 const dbUrl = process.env.MONGO_URL;
 mongoose.connect(dbUrl , (err) => { 
