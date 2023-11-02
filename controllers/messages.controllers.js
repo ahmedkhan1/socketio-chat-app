@@ -7,7 +7,14 @@ const getMessages = (req, res) => {
 }
 
 const sendMessage = (req, res) => {
-
+    var message = new Message(req.body);
+    message.save((err) =>{
+      if(err)
+        sendStatus(500);
+      
+      io.emit('message', req.body);
+      res.sendStatus(200);
+    })
 }
 
 
